@@ -15,11 +15,11 @@ namespace Fibonacci
             valor = Int32.TryParse(Console.ReadLine(), out numero);
 
             for (int finish = 0; finish < numero; finish++)
-            {
-                z = x + y;
+            {               
+                z = y;
                 Console.WriteLine(z);
                 y = x;
-                x = z;
+                x = y + z;
             }
             if (numero < 2 || !valor)
             {
